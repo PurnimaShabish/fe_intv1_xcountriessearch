@@ -1,0 +1,39 @@
+.main-container{
+    width: 100%;
+    height : 100vh;
+    margin : 10px auto;
+    /* border: solid 1px darkblue; */
+    box-sizing: border-box;
+}
+
+.search-field{
+    width: 70%;
+    height: 1.5rem;
+    /* margin: 0 auto; */
+    margin-top: 5px;
+    border: solid 1px grey;
+    border-radius: 2px;
+}
+
+.grid-container{
+    width: 95%;
+    height: auto;
+    margin: 10px;
+    display:grid;
+    grid-template-columns: repeat(7,1fr);
+    grid-gap:10px;
+    box-sizing: border-box;
+}
+
+.country-card{
+    width: 100%;
+    height: 150px;
+    /* aspect-ratio: 1; */
+    border: solid 1px black;
+    border-radius: 10px;
+}
+
+.country-card img{
+    width: 50%;
+    aspect-ratio: 1;
+}
