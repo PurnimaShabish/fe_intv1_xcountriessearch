@@ -75,7 +75,7 @@ const XCountriesSearch = () => {
                             src={ctry.png} 
                             alt="Unavailable">
                         </img>
-                        <h4 style={{marginTop:"-10px"}}>{ctry.common}</h4>
+                        <p style={{marginTop:"-10px"}}>{ctry.common}</p>
                     </div>
                 ))}                   
             </div>
