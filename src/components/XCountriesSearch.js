@@ -11,14 +11,16 @@ const XCountriesSearch = () => {
     const countryListURL = "https://countries-search-data-prod-812920491762.asia-south1.run.app/countries";
 
     const handleChange = (e) => {
-        setSearchTerm(e.target.value);
 
-        if(!searchTerm){
+        const inputValue = e.target.value;
+        setSearchTerm(inputValue);
+
+        if(!inputValue){
             setCurrentList(countryList);
             return;
         }
 
-        const query = searchTerm.toLowerCase();
+        const query = inputValue.toLowerCase();
         const filteredCountries = countryList.filter(country => 
         country.common.toLowerCase().includes(query));
         setCurrentList(filteredCountries);
@@ -64,7 +66,7 @@ const XCountriesSearch = () => {
             </div>
             <div className="grid-container">
                 {currentList.map((ctry,idx) => (
-                    <div className="country-card">
+                    <div className="countryCard">
                         <img  style={{
                             width: "50%",
                             aspectRatio:"1",
